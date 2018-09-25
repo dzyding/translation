@@ -41,7 +41,7 @@ BigNerdCoding
 |森尼羊|[Sunnyyoung咩](https://weibo.com/34992577) | [Sunnyyoung](https://www.sunnyyoung.net)|[Sunnyyoung](https://github.com/Sunnyyoung) |
 |Darren ||| [DarrenChen123](https://github.com/DarrenChen123) |
 |jojo | [Jojotov](https://weibo.com/dingtongzhou/profile?rightmod=1&wvr=6&mod=personinfo)|[JOJOTOV](https://dingtz.com)|[jojotov](https://github.com/jojotov) |
-| Hale |[Hale0101](https://weibo.com/p/1005053233770040)|[Hale's Blog](http://wuqiuhao.github.io/)|[Hale](https://github.com/wuqiuhao)|
+| Hale |[Hale0101](https://weibo.com/p/1005053233770040)|[Hale's Blog](https://wuqiuhao.github.io/)|[Hale](https://github.com/wuqiuhao)|
 | 灰s | [灰s](https://weibo.com/u/2159669295)|[灰s](https://juejin.im/user/5862fa678d6d810065fe0efd)|[灰s](https://github.com/dzyding) |
 | MaxXD | [MaxXD不能使用](https://weibo.com/u/5029986118)|[认知即事实](http://robin4han.github.io/)|[dearbojack](https://github.com/dearbojack) |
 | Damonwong ||| [Damonvvong](https://github.com/Damonvvong) |
@@ -78,7 +78,7 @@ BigNerdCoding
 | MM |画喵程序猿mmoaay||mmoaay|
 | shanksyang ||||
 | 冬瓜 | [冬瓜争做全栈瓜](https://weibo.com/desgard/profile?rightmod=1&wvr=6&mod=personinfo) | [Guardia · 瓜地](http://www.desgard.com/) | [Desgard](https://github.com/desgard) |
-|小铁匠||||
+|小铁匠|[小铁匠Linus](https://weibo.com/linusling)|[小铁匠Linus](http://linusling.com/)|[小铁匠Linus](https://github.com/linusling)|
 | littledogboy ||||
 | Forelax |[ForelaxMe](https://weibo.com/3889029090/profile)|[Forelax's Blog](http://forelax.space/)|[ForelaxX](https://github.com/ForelaxX)|
 | pmst ||||
@@ -89,7 +89,7 @@ BigNerdCoding
 | 智多芯 |[智多芯](https://weibo.com/hulz)|[智多芯的博客](http://blog.hulizhen.me/)|[智多芯](https://github.com/hulizhen)|
 |numbbbbb | [梁杰_numbbbbb](https://weibo.com/numbbbbb) | [numbbbbb](http://numbbbbb.com/) | [numbbbbb](https://github.com/numbbbbb/) |
 |MaxXD |[MaxXD不能使用](https://weibo.com/u/5029986118)|[认知即事实](http://robin4han.github.io/)|[dearbojack](https://github.com/dearbojack)|
-|muhlenXi |---- |---- |---- |
+|muhlenXi |[muhlenXi](https://weibo.com/523545319) |[muhlenXi的博客](http:www.muhlenxi.com) |[muhlenXi](https://github.com/muhlenXi)  |
 
 ## 文章更新
 
