@@ -1,8 +1,26 @@
-# 协议中的私有属性
+title: "协议中的私有属性"
+date: 2018-09-25
+tags: [协议]
+categories: [Protocols] [SWIFT]
+permalink: protocols-private-properties
+keywords: Swift，协议
+custom_title: Swift 协议中的私有属性
+description: 通过另一种方式来控制协议中属性和方法的访问权限
+
+---
+原文链接=http://alisoftware.github.io/swift/protocols/2018/09/02/protocols-private-properties/
+作者=Olivier Halligon
+原文日期=2018-09-02
+译者=灰s
+校对=
+定稿=
+
+<!--此处开始正文-->
 在 Swift 中，协议不能对其申明的属性进行指定的访问控制。如果协议中列出了某个属性，则必须使遵守协议的类型显式声明这些属性。  
 
-但有些时候，虽然你需要这些属性对现实提供支持，但是你并不希望这些属性在类型的外部被使用。让我们看看如何解决这个问题。  
-
+但有些时候，虽然你需要这些属性对现实提供支持，但是你并不希望这些属性在类型的外部被使用。让我们看看如何解决这个问题。 
+<!--more-->
+ 
 ## 一个简单的例子
 假设你需要创建一个专门的对象来管理你的 ViewControllers ( 视图控制器 ) 导航，就像一个 Coordinator ( 协调器 )。  
 
