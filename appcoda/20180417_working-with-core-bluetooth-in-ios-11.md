@@ -69,7 +69,7 @@ Bluetooth SIG 规定，[**“所有使用蓝牙技术的产品必须完成 Bluet
 > • 根据 [**Bluetooth Trademark License Agreement（蓝牙商标许可协议）**](https://www.bluetooth.com/~/media/files/membership/btla.ashx?la=en) 在符合条件的产品上使用蓝牙商标的许可  
 > • 能够与数以万计的 Bluetooth SIG 成员建立网络，并在各种各样的行业中合作 — 从芯片制造商到应用程序的开发者，设备制造商和服务提供商  
 > • 能够参加 [**SIG 专家组、研究小组和工作组中的子小组**](https://www.bluetooth.com/specifications/working-groups/working-groups-committees)  
-> • 访问诸如 Profile Tuning Suite（PTS）之类的工具，提供协议和协同测试.....
+> • 访问诸如 Profile Tuning Suite（PTS）之类的工具，提供协议和协同测试……
 
 ## 成为 Bluetooth SIG 的一员
 成为 SIG 的一员 [**拥有很多好处**](https://www.bluetooth.com/develop-with-bluetooth/build)。你可以免费使用教育工具包、培训视频、网络研讨会、开发人员论坛、开发人员支持服务、白皮书、产品测试工具，并帮助确保您的应用程序满足国际监管要求（主要是关于 [**射频排放**](https://www.fda.gov/MedicalDevices/DigitalHealth/WirelessMedicalDevices/default.htm)）。  
@@ -91,7 +91,7 @@ Bluetooth SIG 规定，[**“所有使用蓝牙技术的产品必须完成 Bluet
 
 > Core Bluetooth framework 让您的 iOS 和 Mac 应用程序与蓝牙低能耗设备通信。例如，您的应用程序可以发现、搜索低能量的外围设备还有与之交互，比如心率监视器、数字恒温器，甚至其他 iOS 设备。  
 
-> 该框架是蓝牙 4.0 规范中关于使用低能耗设备的抽象。就是说，它为你，也就是开发者，隐藏了规范中很多底层的细节，使你更容易开发与低能耗设备进行交互的应用程序。因为该框架是基于标准规范的，所有规范中的很多概念和术语被采用了。......  
+> 该框架是蓝牙 4.0 规范中关于使用低能耗设备的抽象。就是说，它为你，也就是开发者，隐藏了规范中很多底层的细节，使你更容易开发与低能耗设备进行交互的应用程序。因为该框架是基于标准规范的，所有规范中的很多概念和术语被采用了。……  
 
 请注意是“低能量设备。”当使用 *Core Bluetooth* 我们并不是处理如无线扬声器这样的经典蓝牙设备。与这类设备的通讯会很快的耗尽电池能量。*Core Bluetooth* 是针对  “Bluetooth Low Energy”（BLE）的 API，也称为“Bluetooth 4.0。”BLE 使用的电力要少得多，因为它的设计目的是通信少量的数据。BLE 设备的一个很好的例子是心率监测器（HRM）。它几乎每秒钟只发送几个字节的数据。这就是为什么人们可以带着一个 HRM 或者带着他们的 iPhone 跑一个小时，记录跑步期间心率的变化，而看不到电池电量的巨大消耗。注意，随着本文的进行，像 BLE 这种首字母缩略词的数量正在增加。  
 
@@ -126,7 +126,7 @@ Bluetooth SIG 规定，[**“所有使用蓝牙技术的产品必须完成 Bluet
 ![](https://appcoda.com/wp-content/uploads/2018/04/bluetooth-found-ryhthm.png)  
 
 依照 [**Apple**](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/CoreBluetoothOverview/CoreBluetoothOverview.html#//apple_ref/doc/uid/TP40013257-CH2-SW17) 的说法：  
-> 外围设备以广告包的形式广播一些数据。一个广告包是一个相对较小的数据束，其中可能包含外围设备所能提供的有用信息，比如外围设备的名字还有主要功能。例如，数字恒温器可能会广播它能提供房间的当前温度。在 BLE 中，广播是外围设备展示其存在的主要方式。另一方面，中央设备可以扫描和监听任何外围设备，只要这些设备的广播信息是它感兴趣的......  
+> 外围设备以广告包的形式广播一些数据。一个广告包是一个相对较小的数据束，其中可能包含外围设备所能提供的有用信息，比如外围设备的名字还有主要功能。例如，数字恒温器可能会广播它能提供房间的当前温度。在 BLE 中，广播是外围设备展示其存在的主要方式。另一方面，中央设备可以扫描和监听任何外围设备，只要这些设备的广播信息是它感兴趣的……  
 
 在这篇教程中，过一会我会向你展示怎样使用 Swift 4 来编码进行外围设备的扫描并连接它们。
 
@@ -239,7 +239,7 @@ centralManager?.scanForPeripherals(withServices: nil)
 
 **Step 14 ：** 将 BLE **Body Sensor Location** 的数据解译成人们可读的格式。前往 GATT 规范的 [**页面**](https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.characteristic.body_sensor_location.xml) 找到这个特征。这个特征非常简单。将值 1、2、3、4、5、6 或 7 存储在 8 位中。形成的文本字符串与这些值以解译为目的的展示是一样的。  
 
-**Step 15 ：** 当一个外围设备从控制中心断开时，采取适当的行动。我更新我的 UI 以及 ......  
+**Step 15 ：** 当一个外围设备从控制中心断开时，采取适当的行动。我更新我的 UI 以及……  
 
 **Step 16 ：** 开始扫描，为了发现一个正在广播 **Heart Rate** 服务（0x180D）的外围设备。  
 
@@ -440,7 +440,7 @@ class HeartRateMonitorViewController: UIViewController, CBCentralManagerDelegate
             if characteristic.uuid == BLE_Body_Sensor_Location_Characteristic_CBUUID {
                 
                 // STEP 11: 订阅关于感兴趣特征的单次通知；
-                // “当你使用这个方法去读取特征的值时，外围设备将会调用 ...... 
+                // “当你使用这个方法去读取特征的值时，外围设备将会调用…… 
                 // peripheral:didUpdateValueForCharacteristic:error:”
                 //
                 // Read    Mandatory
@@ -452,7 +452,7 @@ class HeartRateMonitorViewController: UIViewController, CBCentralManagerDelegate
             if characteristic.uuid == BLE_Heart_Rate_Measurement_Characteristic_CBUUID {
 
                 // STEP 11: 订阅关于感兴趣特征的持续通知；
-                // “当你启用特征值的通知时，外围设备调用 ......
+                // “当你启用特征值的通知时，外围设备调用……
                 // peripheral(_:didUpdateValueFor:error:)” 
                 //
                 // Notify    Mandatory
