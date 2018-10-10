@@ -74,7 +74,7 @@ BigNerdCoding
 
 |群ID|微博|个站|Github|
 |---- |---- |---- |---- |
-| 水水 | Zx_Young027 | [曦息地](blog.yousanflics.com.cn) | [Yousanflics](https://github.com/yousanflics) |
+| 水水 | [Zx_Young027](https://weibo.com/u/2836576672?is_hot=1) | [曦息地](yousanflics.com.cn) | [Yousanflics](https://github.com/yousanflics) |
 | MM |画喵程序猿mmoaay||mmoaay|
 | shanksyang ||||
 | 冬瓜 | [冬瓜争做全栈瓜](https://weibo.com/desgard/profile?rightmod=1&wvr=6&mod=personinfo) | [Guardia · 瓜地](http://www.desgard.com/) | [Desgard](https://github.com/desgard) |
