@@ -1,29 +1,80 @@
 # NSHipster 翻译说明
 
+> 之前 [NSHipster](https://nshipster.com/) 上面的文章之前一直是由 [NSHipster.cn](https://nshipster.cn/) 团队在负责翻译。
+> 现在是 SwiftGG 跟他们合作一起翻译。
+
+## 负责人
+
+#### 翻译负责人 @雨谨
+
+- **收集待选文章**
+
+ @雨谨 将挑选部分 [NSHipster](https://nshipster.com/) 上的文章，如果自己有想翻译的（NSHipster上的）文章可以找他沟通。
+- **确认翻译人员**
+
+ 和 [NSHipster](https://nshipster.com/) 确认之后负责人会找一个人翻译文章。
+- **确认翻译进度**
+
+ 确定好翻译人员之后会确定一个翻译交付时间，一般**不超过两周**。
+
+#### 校对负责人 @水水
+
+- **确认校对人员**
+
+ 待文章翻译完成之后，@水水 会找两个人校对文章。
+- **确认校对进度**
+
+ 确定好校对人员之后，会确认一个校对交付时间。一般**不超过一周**。
+- **校对问题反馈**
+
+ 因为校对完成之后的文章 [NSHipster](https://nshipster.com/) 会自己再校对一遍，此过程中出现的相关问题可以在群里同步一下，避免下次发生。
+
 ## 翻译流程
 
-[NSHipster](https://nshipster.com/) 上面的文章之前一直是由 [NSHipster.cn](https://nshipster.cn/) 团队在负责翻译，现在是我们 (SwiftGG) 跟他们合作一起翻译。雨谨作为 SwiftGG 的代表，负责协调双方的交流。目前暂定的合作流程如下：
+#### 1.认领和翻译文章
 
-1. 收集待选文章。雨谨会挑选部分 [NShipster](https://nshipster.com/) 上的文章，如果大家发现了好文章，也可以发给他。
-2. 确定待选文章。雨谨将待选文章发给 [NSHipster.cn](https://nshipster.cn/) 确认，如果他们觉得没问题，我们就挂到 GitHub 的 [issues](https://github.com/SwiftGGTeam/translation/issues) 上，供大家认领。
-3. 认领 issue。当我们有人要翻译某篇文章时，请先联系雨谨，由他跟 [NSHipster.cn](https://nshipster.cn/) 再次确认，避免重复工作。如果他们也没做，我们就可以按正常流程开始翻译了。
-4. 提交给 [NSHipster.cn](https://nshipster.cn/)。翻译完成，并在我们这边校对通过后，按照他们的[格式规范](# [NSHipster.cn](https://nshipster.cn/) 的译文规范)处理译文，然后提交 PR 到 NSHipster 的  [articles-zh-Hans](https://github.com/NSHipster/articles-zh-Hans) 仓库。可以参考 [我们提 PR 的方式](https://github.com/SwiftGGTeam/translation/blob/master/翻译流程概述及PR说明.md#如何发起-pull-request)，先 Fork 他们的仓库，本地修改 push 后再提交 PR。之后 [NSHipster.cn](https://nshipster.cn/) 会再次校对译文，然后发布到他们的 [网站](https://nshipster.cn/) 上。为了让他们能及时开始校对，提交 PR 后，请通知雨谨。
-5. 同步发布到 SwiftGG 官方发布平台。
+- 认领之后
 
-## [NSHipster.cn](https://nshipster.cn/) 的译文规范
+    - 确定要翻译的文章之后，点击打开 [**Issues**](https://github.com/SwiftGGTeam/translation/issues)，在右侧的 **Assignees** 栏点击 **assign yourself**
+    - 确定最后的交付日期，在保证质量的前提下尽量以最快速度完成。
 
-注意，以下格式规范 **仅限** 提交到 [NSHipster.cn : articles-zh-Hans](https://github.com/NSHipster/articles-zh-Hans) 仓库时使用，提交到 [SwiftGG : translation](https://github.com/SwiftGGTeam/translation) 仓库时，依然使用 [我们自己的格式规范](https://github.com/SwiftGGTeam/translation/blob/master/SwiftGG%20排版指南.md)。
+- 翻译时
 
-[NSHipster.cn](https://nshipster.cn/) 对 MarkDown 格式的要求如下：
+    - 需要注意**格式**，尤其是中英文和数字以及代码，可以参看 [这个说明](https://github.com/SwiftGGTeam/translation/blob/master/SwiftGG%20%E6%8E%92%E7%89%88%E6%8C%87%E5%8D%97.md)
+    - 文章头部需要添加通用头部，具体格式可以参考 [这个说明](https://raw.githubusercontent.com/SwiftGGTeam/translation/master/%E4%B9%A6%E5%86%99%E8%A7%84%E8%8C%83%E5%8F%8ADemo/SwiftGG%E5%8D%9A%E6%96%87%E4%B9%A6%E5%86%99%E8%A7%84%E8%8C%83.md)，还有 [这个例子](https://raw.githubusercontent.com/SwiftGGTeam/translation/master/%E4%B9%A6%E5%86%99%E8%A7%84%E8%8C%83%E5%8F%8ADemo/20160726_simple-barcode-reader-app-swift.md)
 
-1. 使用原文的格式，且**原文在上，译文在下**，方便校对者校验。原文仅用于校对，之后会被发布者删除，因此可以直接将原文粘贴上来，**不必使用注释语法**。具体参考我们提交到 NSHipster 的 [Never.md](https://raw.githubusercontent.com/mobilefellow/articles-zh-Hans/master/2018-07-30-never.md) 这篇文章中:
+- 翻译完成后，**务必自查这三件事**
 
-    > Every compiler textbook will tell you that a comment like this one can’t and won’t affect the behavior of compiled code. Murphy’s Law says otherwise.
-    >
-    > 所有编译器的教科书都会告诉你，这样一句注释不能也不会对编译出的代码产生任何影响。[墨菲定理](https://en.wikipedia.org/wiki/Murphy%27s_law) 告诉你并非如此，注释以下的代码一定会被触发。
+    - **1. 文章头部格式是否符合文档要求**
+    - **2. 文章内容格式是否符合文档要求**
+    - **3. 翻译完成后至少间隔一天重新阅读整篇译文，将自己设置成读者出声阅读译文，将所有读着别扭、不通顺的句子都修改好（注意！别忘了格式）**
 
-2. 英文、数字与中文之间（中文标点除外）加一个空格。
-3. 文章头部加上下面的内容：
+#### 2. 内部校对
+
+
+- 按照 [这个说明](https://github.com/SwiftGGTeam/translation/blob/master/%E7%BF%BB%E8%AF%91%E6%B5%81%E7%A8%8B%E6%A6%82%E8%BF%B0%E5%8F%8APR%E8%AF%B4%E6%98%8E.md#%E5%A6%82%E4%BD%95%E5%8F%91%E8%B5%B7-pull-request) 创建 Pull requests（以下简称 PR） 在 PR 的内容里关联对应的 Issues，关联方式：将 Issues 页面的网址复制到 PR 信息中或者直接在 Pull requests 信息中评论 `#11` 11 是对应的 Issues 号
+- 翻译文章放到 `translation/nshipster` 文件夹下，命名建议 `yyyyMMdd_文章名.md` 例如 `20180730_Never.md`。
+- 提交 PR 之后提醒 @水水 安排校对人员
+
+#### 3. [NSHipster.cn](https://nshipster.cn/) 校对
+
+**因 [NSHipster.cn](https://nshipster.cn/) 对校对有特殊要求故需要调整你原来的译文格式**
+
+- 校对格式，使用**原文在上，译文在下**。从 [NSHipster/articles](https://github.com/NSHipster/articles) 仓库下载的原文的 .md 文件，包含了标准的 NSHipster 格式。因此建议将译文复制到原文文件，而不是将 [https://nshipster.com](https://nshipster.com) 上的原文复制到译文文件。示例如下:
+
+> Every compiler textbook will tell you that
+a comment like this one can't and won't affect the behavior of compiled code.
+[Murphy's Law](https://en.wikipedia.org/wiki/Murphy%27s_law) says otherwise.
+>
+> 所有编译器的教科书都会告诉你，这样一句注释不能也不会对编译出的代码产生任何影响。[墨菲定理](https://en.wikipedia.org/wiki/Murphy%27s_law) 告诉你并非如此，注释以下的代码一定会被触发。
+
+- 按照他们的 [格式规范]( [NSHipster.cn](https://nshipster.cn/) 的译文规范 ) 处理译文
+
+    - 英文、数字与中文之间（中文标点除外）加一个空格。
+    - 对于系统名词（如 Finder，Preview）和被大众所熟悉的英文名词（如 Dark Mode），如果没有贴切的中文词语，可以不翻译。例如，Finder 和 AirDrop 的官方翻译“访达”和“隔空投递”并不是很好因此不建议在译文中使用。
+    - 当需要做名词翻译时，到底是采用“中文（英文）”还是“英文（中文）”模式，如 Dark Mode（深色模式）或 深色模式（Dark Mode），取决于后续段落里再次出现同一个单词时，你打算显示中文还是英文。以 Finder 为例，如果后续段落你都打算显示 “ Finder ”，那么第一次出现时，应该显示“ Finder（访达）”，以便让中文版操作系统的用户知道，Finder 就是 访达；反之，第一次应该显示 “ 访达（Finder）”，以便让英文版操作系统的用户了解对应关系。
+    - 只需要翻译 [NSHipster/articles](https://github.com/NSHipster/articles) 仓库的原文的内容。[NSHipster.com](https://nshipster.com) 的文章可能包含一些其他信息，比如 [macOS Dynamic Desktop](https://nshipster.com/macos-dynamic-desktop/) 中的 “nsmutablehipster”，这些都不需要翻译的。
+    - 文章头部加上下面的内容
 
 ```
 ---
@@ -36,3 +87,11 @@ translator: Candyan
 ```
 
 更多细节可以参考他们的 [articles-zh-Hans](https://github.com/NSHipster/articles-zh-Hans) 仓库中已发布文章的排版格式。
+
+- 然后提交 PR 到 NSHipster 的  [articles-zh-Hans](https://github.com/NSHipster/articles-zh-Hans) 仓库。可以参考 [我们提 PR 的方式](https://github.com/SwiftGGTeam/translation/blob/master/翻译流程概述及PR说明.md#如何发起-pull-request)，先 Fork 他们的仓库，本地修改 push 后再提交 PR。
+- [NSHipster.cn](https://nshipster.cn/) 会再次校对译文确定无误后发布到他们的 [网站](https://nshipster.cn/) 上。为了让他们能及时开始校对在你向他们的仓库提交 PR 后，请通知 @水水
+
+#### 4.同步发布到 SwiftGG 官方发布平台。
+- 校对负责人通知定稿负责人进行发布
+
+
