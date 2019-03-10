@@ -98,8 +98,8 @@ class Person : Equatable
     
     static func == (lhs: Person, rhs: Person) -> Bool
     {
-        if lhs.weight == rhs.weight &amp;&amp;
-            lhs.name == rhs.name &amp;&amp;
+        if lhs.weight == rhs.weight &&
+            lhs.name == rhs.name &&
             lhs.sex == rhs.sex
         {
             return true
