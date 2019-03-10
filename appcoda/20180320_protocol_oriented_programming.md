@@ -6,7 +6,9 @@ permalink: protocol-oriented-programming
 keywords: protocol-oriented-programming，POP，面向协议编程
 custom_title: 面向协议教程
 description: 对面向协议编程，做了一个简单的引言，为第二篇文章做准备工作。
+
 ---
+
 原文链接=https://www.appcoda.com/protocol-oriented-programming/
 作者=Andrew Jaffee
 原文日期=2018-03-20
