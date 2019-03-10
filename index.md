@@ -34,6 +34,8 @@
 | uraimo | [uraimo](https://www.uraimo.com/) |
 | KHANLOU | [KHANLOU](http://khanlou.com/) |
 | Russ Bishop | [Russ Bishop](http://www.russbishop.net/) |
+| Jordan Morgan | [swiftjectivec](https://www.swiftjectivec.com/index.html) |
+
 
 ## 建议&反馈
 
