@@ -9,29 +9,11 @@
 
 #### [发布](https://github.com/SwiftGGTeam/translation/blob/master/%E7%BF%BB%E8%AF%91%E6%B5%81%E7%A8%8B%E8%AF%A6%E7%BB%86%E8%AF%B4%E6%98%8E.md#%E5%8F%91%E5%B8%83)
 
-# 分工
-
 ## 翻译
-
-### owner
-
-BigNerdCoding
-
-#### 职责
-
-- 跟进翻译质量
-- 跟进翻译进度
-- 新人翻译培训
 
 ### 要求
 
 每个月至少翻译一篇
-
-### 相关文档
-
-- [翻译流程说明](https://github.com/SwiftGGTeam/translation/blob/master/%E7%BF%BB%E8%AF%91%E6%B5%81%E7%A8%8B%E8%AF%A6%E7%BB%86%E8%AF%B4%E6%98%8E.md#%E7%BF%BB%E8%AF%91)
-- 书写规范及Demo：https://github.com/SwiftGGTeam/GGHexo/tree/master/
-- Cee 翻译指南（需要翻墙）：https://speakerdeck.com/cee/guan-yu-pai-ban
 
 ### 名单
 
@@ -54,22 +36,12 @@ BigNerdCoding
 | rsenjoyer | | | [rsenjoyer](https://github.com/rsenjoyer) |
 | 郑一一| [郑一一二二](https://weibo.com/u/1709901614) |[郑一一一一](https://www.jianshu.com/u/076cc5e18bb8)|[郑一一](https://github.com/YiYiZheng) |
 | Nemo | [Nemocdz](https://weibo.com/u/2488167352) |[Nemocdz](https://nemocdz.github.io/)|[Nemocdz](https://github.com/Nemocdz) |
+| WAMaker ||| [WAMaker](https://github.com/WAMaker) |
+| 脱脂棉布团 ||[陈栋楠的Blog](http://blog.chendongnan.com)|[Dongnan Chen](https://github.com/ChenDongnan) |
+| RocZhang | [张鹏RocZhang](http://weibo.com/u/3210801545) | [Roc Zhang's Blog](https://www.roczhang.com) | [RocZhang9673](https://github.com/RocZhang9673) |
+| ericchuhong | | | [ericchuhong](https://github.com/ericchuhong) |
 
 ## 校对
-
-### 原则
-
-- 确保翻译内容正确
-- 确保排版格式正确
-- 翻译内容通顺、易读
-
-### owner
-
-水水
-
-#### 职责
-
-- 跟进校对进度
 
 ### 名单
 
@@ -96,17 +68,12 @@ BigNerdCoding
 
 ### owner
 
-石峰铭
+石峰铭（雨谨）
 
 #### 职责
 
 - 跟进文章更新
 - 对接博客授权
-
-### 待加入列表
-
-- swift evolution
-- 斯坦福 iOS 教程翻译
 
 ## 发布
 
