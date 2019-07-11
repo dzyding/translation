@@ -17,13 +17,13 @@ description: 对面向协议编程，做了一个简单的引言，为第二篇�
 定稿=
 
 <!--此处开始正文-->
-对于开发者来说最大的敌人就是复杂，所以当听说有新技术承诺可以帮助我管理混乱时，我就会去了解它。Swift 中的“面向协议编程”（POP）是最近（至少自2015年以来）引起广泛关注的“热门”方法之一。在这里我们将使用 Swift 4。在我自己编写代码时，发现 POP 很有前途。最有趣的是，Apple 宣称 [**“Swift 的核心是面对协议的”**](https://developer.apple.com/videos/play/wwdc2015/408/?time=868)。我想在一个正式的报告中分享关于 POP 的经验，一篇关于这个新兴技术清晰而简洁的教程。  
+对于开发者来说，复杂性是最大的敌人，因此我会去了解那些可以帮助我管理混乱的新技术。Swift 中的“面向协议编程”（POP）是最近（至少自2015年以来）引起广泛关注的“热门”方法之一。在这里我们将使用 Swift 4。在我自己编写代码时，发现 POP 很有前途。更吸引人的是，Apple 宣称 [**“Swift 的核心是面对协议的”**](https://developer.apple.com/videos/play/wwdc2015/408/?time=868)。我想在一个正式的报告中分享关于 POP 的经验，一篇关于这个新兴技术清晰而简洁的教程。  
 
 我将解释关键概念，提供大量代码示例，无法避免的将 POP 和 OOP （面向对象编程）进行比较，并对面向流行编程（FOP?）的人群所声称的 POP 是解决所有问题的灵丹妙药这一说法进行泼冷水。  
 
 面向协议编程是一个很棒的新工具，值得*添加到你现有的编程工具库中*，但是**没有什么**可以代替那些经久不衰的基本功，就像将大的函数拆分成若干个小函数，将大的代码文件拆分成若干个小的文件，使用有意义的变量名，在敲代码之前花时间设计架构，合理而一致的使用间距和缩进，将相关的属性和行为分配到类和结构体中 - 遵循这些常识可以让世界变得不同。如果你编写的代码无法被同事理解，那它就是无用的代码。  
 
-学习和采用像 POP 这样的新技术并不需要绝对的唯一。POP 和 OOP 不仅可以共存，还可以互相协助。对于大多数开发者包括我自己，掌握 POP 需要时间和耐心。因为 POP 真的很重要，所以我将教程分成两篇文章。本文将主要介绍和解释 Swift 的协议和 POP。第二篇文章将深入研究 POP 的高级应用方式（比如从协议开始构建应用程序的功能），范型协议，从引用类型到值类型转变背后的动机，列举 POP 的利弊，列举 OOP 的利弊，比较 OOP 和 POP，阐述为什么“Swift 是面向协议的，”并且深入研究一个被称为 [**“局部推理”**](https://developer.apple.com/videos/play/wwdc2016/419/?time=41) 的概念，它被认为是通过使用 POP 增强的。今天我们将讨论其中的一些高级主题，但只是表面上的。  
+学习和采用像 POP 这样的新技术并不需要绝对的唯一。POP 和 OOP 不仅可以共存，还可以互相协助。对于大多数开发者包括我自己，掌握 POP 需要时间和耐心。因为 POP 真的很重要，所以我将教程分成两篇文章。本文将主要介绍和解释 Swift 的协议和 POP。第二篇文章将深入研究 POP 的高级应用方式（比如从协议开始构建应用程序的功能），范型协议，从引用类型到值类型转变背后的动机，列举 POP 的利弊，列举 OOP 的利弊，比较 OOP 和 POP，阐述为什么“Swift 是面向协议的”，并且深入研究一个被称为 [**“局部推理”**](https://developer.apple.com/videos/play/wwdc2016/419/?time=41) 的概念，它被认为是通过使用 POP 增强的。这次我们只会粗略涉及一些高级主题。  
 <!--more--> 
 
 ## 引言
@@ -55,15 +55,15 @@ class ViewController: UIViewController
 
 当 iOS 开发者开发新的应用程序时，最常见的特征就是 OOP，那么 POP 在这里扮演什么角色呢？  
 
-你知道我将怎样继续么？想想大多数开发人员的下一个主要步骤是什么。那就是**采用协议**（并实现 [**委托，但我们已经讨论过了**](https://appcoda.com/swift-delegate/)）。  
+你知道我将怎样继续么？想象大多数开发人员的下一个主要步骤是什么。那就是**遵循协议**（并实现 [**委托，但我们已经讨论过了**](https://appcoda.com/swift-delegate/)）。  
 
-让我给你们看一个例子使其便于理解。我相信你们很多人都用过 `UITableView`。虽然这不是一个关于 `UITableView` 的教程，但是你应该知道在 `UIViewController` 中将其实现时，协议扮演着重要的角色。在向 `UIViewController` 中添加 `UITableView`时，`UIViewController` 必须**采取** `UITableViewDataSource` 和 `UITableViewDelegate` 协议，就像这样：  
+让我给你们看一个例子使其便于理解。我相信你们很多人都用过 `UITableView`。虽然这不是一个关于 `UITableView` 的教程，但是你应该知道在 `UIViewController` 中将其实现时，协议扮演着重要的角色。在向 `UIViewController` 中添加 `UITableView`时，`UIViewController` 必须**遵循** `UITableViewDataSource` 和 `UITableViewDelegate` 协议，就像这样：  
 
 ```swift
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 ```  
 
-简而言之，采用 `UITableViewDataSource` 允许你用数据填充所有的 `UITableViewCell`，比如给用户提供导航的菜单项名称。采用 `UITableViewDelegate`，你可以对用户与 `UITableView` 的交互进行更细粒度的控制，比如在用户点击特定的 `UITableViewCell` 时执行适当的操作。  
+简而言之，遵循 `UITableViewDataSource` 允许你用数据填充所有的 `UITableViewCell`，比如给用户提供导航的菜单项名称。采用 `UITableViewDelegate`，你可以对用户与 `UITableView` 的交互进行更细粒度的控制，比如在用户点击特定的 `UITableViewCell` 时执行适当的操作。  
 
 ### 定义
 我发现，在进行技术性定义和讨论之前，理解常用的术语定义可以帮助读者更好地理解某个主题。首先，让我们 考虑 [**“协议”一词的通俗定义**](https://en.oxforddictionaries.com/definition/protocol)：  
@@ -73,7 +73,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
 Apple 的“Swift 编程语言（Swift 4.0.3）” [文档中的声明](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#//apple_ref/doc/uid/TP40014097-CH25-ID267)：  
 
-> 协议定义了适合特定任务或功能的方法、属性和其他需求的蓝图。然后，类、结构体或枚举可以采用该协议来提供这些需求的实际实现。任何满足协议要求的类型都被称为遵循该协议。
+> 协议定义了适合特定任务或功能的方法、属性和其他需求的蓝图。然后，类、结构体或枚举可以遵循该协议来提供这些需求的实际实现。任何满足协议要求的类型都被称为遵循该协议。
 
 协议是最重要的工具之一，我们必须给软件固有的混乱带来一些秩序。协议使我们能够要求一个或多个类和结构体包含特定的最小且必需的属性，和/或提供特定的最小且必需的实现/方法。通过 [**协议扩展**](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html#//apple_ref/doc/uid/TP40014097-CH25-ID521)，我们可以为一些或所有协议的方法提供默认实现。  
 
@@ -146,7 +146,7 @@ protocol IsEqual
 2. WWDC 2015 展示的 [**“Building Better Apps with Value Types in Swift”**](https://developer.apple.com/videos/play/wwdc2015-414/?time=48)  
 3. WWDC 2016 展示的 [**“Protocol and Value Oriented Programming in UIKit Apps”**](https://developer.apple.com/videos/play/wwdc2016-419/?time=340)  
 
-我会给你一个提示和作业……假设你有多个指向同一个类实例的引用，用于修改或“改变”属性。这些引用指向相同的数据块，因此将其称为“共享”数据并不夸张。在某些情况下，共享数据可能会导致问题，如下面的示例所示。这是否表示我们要将所有的代码改成值类型？**并不是！**就像 Apple 的一个工程师指出：[**“例如，一个 Window（窗口）。复制一个 Window 是什么意思？”**](https://developer.apple.com/videos/play/wwdc2015-408/?time=2566) 查看下面的代码，并思考这个问题。
+我会给你一个提示和作业……假设你有多个指向同一个类实例的引用，用于修改或“改变”属性。这些引用指向相同的数据块，因此将其称为“共享”数据并不夸张。在某些情况下，共享数据可能会导致问题，如下面的示例所示。这是否表示我们要将所有的代码改成值类型？**并不是！**就像 Apple 的一个工程师指出：[**“例如，以 Window 为例。复制一个 Window 是什么意思？”**](https://developer.apple.com/videos/play/wwdc2015-408/?time=2566) 查看下面的代码，并思考这个问题。
 
 ### 引用类型
 
